@@ -16,7 +16,16 @@ const config: GatsbyConfig = {
       "path": "./src/images/"
     },
     __key: "images"
-  }]
+  }, {
+    resolve: `gatsby-plugin-google-fonts`,
+    options: {
+      fonts: [
+        `Dancing Script`
+      ],
+      display: 'swap'
+    }
+  }],
+  pathPrefix: "/milnatas-institucional",
 };
 
 export default config;

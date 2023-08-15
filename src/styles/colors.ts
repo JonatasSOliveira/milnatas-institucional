@@ -6,3 +6,4 @@ export const HIGHLIGHT_COLOR_02 = "#82c8b0";
 export const HIGHLIGHT_COLOR_03 = "#f9e19d";
 export const NEUTRAL_COLOR_01 = "#f5f5f5";
 export const NEUTRAL_COLOR_02 = "#333333";
+export const WHATSAPP_COLOR = "#25d366";
