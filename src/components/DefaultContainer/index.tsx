@@ -3,7 +3,7 @@ import { Background, Container } from "./styles"
 
 const DefaultContainer: React.FC<{ children: React.ReactNode}> = ({ children }) => {
     return (
-        <Background>
+        <Background style={{ height: `${window.innerHeight}px`}}>
             <Container>
                 {children}
             </Container>
