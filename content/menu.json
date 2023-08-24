@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Bombom de Uva",
+        "price": 10,
+        "ingredients": [
+            "Uvas verdes frescas e selecionadas.",
+            "Creme de ninho suave e cremoso.",
+            "Ganache de chocolate saboroso."
+        ]
+    },
+    {
+        "name": "Bombom de Morango",
+        "price": 10,
+        "ingredients": [
+            "Morangos frescos e selecionados.",
+            "Creme de ninho suave e cremoso.",
+            "Ganache de chocolate saboroso."
+        ]
+    },
+    {
+        "name": "Bombom de Paçoca",
+        "price": 10,
+        "ingredients": [
+            "Creme de Paçoca suave e cremoso.",
+            "Ganache de chocolate saboroso.",
+            "Pedaços de Paçoca."
+        ]
+    },
+    {
+        "name": "Bombom de Prestígio",
+        "price": 10,
+        "ingredients": [
+            "Creme de coco suave e cremoso.",
+            "Ganache de chocolate saboroso.",
+            "Pedaço de Prestígio."
+        ]
+    }
+]

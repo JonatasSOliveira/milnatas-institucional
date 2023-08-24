@@ -12,6 +12,9 @@ export const Container = styled.a`
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    cursor: pointer;
     color: ${NEUTRAL_COLOR_02};
+    font-weight: bold;
+    font-family: 'Josefin Sans';
+    font-size: 1.2rem;
+    line-height: 0;
 `
