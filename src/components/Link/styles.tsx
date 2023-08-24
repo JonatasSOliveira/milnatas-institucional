@@ -1,7 +1,8 @@
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
+import { Link as GatsbyLink } from "gatsby"
 import { NEUTRAL_COLOR_02 } from '../../styles/colors'
 
-export const Container = styled.a`
+const sharedStyle = css`
     border: 1px solid ${NEUTRAL_COLOR_02};
     border-radius: 12px;
     gap: 10px;
@@ -18,3 +19,7 @@ export const Container = styled.a`
     font-size: 1.2rem;
     line-height: 0;
 `
+
+export const Anchor = styled.a`${sharedStyle}`
+
+export const Link = styled(GatsbyLink)`${sharedStyle}`

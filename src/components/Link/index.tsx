@@ -1,21 +1,25 @@
 import React from 'react'
-import { Container } from './styles'
-
 import { IconType } from '@react-icons/all-files/lib';
+import { Anchor, Link } from './styles'
 
-interface LinkProps {
+
+interface LinkComponentProps {
     url: string,
     message: string,
     icon: IconType,
     color: string,
     blank?: boolean
+    internalUrl?: boolean
 }
 
-const Link: React.FC<LinkProps> = ({ url, message, icon: Icon, color, blank }) => (
-    <Container href={url} target={blank ? '_blank' : ''} style={{ backgroundColor: color }}>
+const LinkComponent: React.FC<LinkComponentProps> = ({ url, message, icon: Icon, color, blank, internalUrl }) => (
+    !internalUrl ? <Anchor href={url} target={blank ? '_blank' : ''} style={{ backgroundColor: color }}>
         <Icon size={16} />
         {message}
-    </Container>
+    </Anchor> : <Link to={url} style={{ backgroundColor: color }}>
+        <Icon size={16} />
+        {message}
+    </Link>
 )
 
-export default Link
+export default LinkComponent

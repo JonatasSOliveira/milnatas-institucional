@@ -4,7 +4,7 @@ import type { HeadFC, PageProps } from "gatsby"
 import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp"
 import { FaListUl } from "@react-icons/all-files/fa/FaListUl"
 import DefaultContainer from "../components/DefaultContainer"
-import Link from "../components/Link"
+import LinkComponent from "../components/Link"
 import { COMPLEMENTARY_COLOR_01, WHATSAPP_COLOR } from "../styles/colors"
 import { LinkContainer, Paragraph } from "./_styles"
 
@@ -20,8 +20,8 @@ const IndexPage: React.FC<PageProps> = () => {
         💝🍫
       </Paragraph>
       <LinkContainer>
-        <Link blank color={WHATSAPP_COLOR} icon={FaWhatsapp} url={urlWhatsapp} message="Entre em contato!"/>
-        <Link color={COMPLEMENTARY_COLOR_01} icon={FaListUl} url="/menu" message="Cardápio!"/>
+        <LinkComponent blank color={WHATSAPP_COLOR} icon={FaWhatsapp} url={urlWhatsapp} message="Entre em contato!"/>
+        <LinkComponent internalUrl color={COMPLEMENTARY_COLOR_01} icon={FaListUl} url="/menu" message="Cardápio!"/>
       </LinkContainer>
    </DefaultContainer>
   )
